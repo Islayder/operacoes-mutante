@@ -1,0 +1,488 @@
+[33m17:46:20 (7132) WARN OptionsValidator[39m DEPRECATED. Use of "files" is deprecated, please use "ignorePatterns" instead (or remove "files" altogether will probably work as well). For now, rewriting them as ["**","!src/**/*.js","!test/**/*.js","!package.json","!package-lock.json","!stryker.config.json"]. See https://stryker-mutator.io/docs/stryker-js/configuration/#ignorepatterns-string
+[32m17:46:20 (7132) INFO ProjectReader[39m Found 1 of 6 file(s) to be mutated.
+[32m17:46:20 (7132) INFO Instrumenter[39m Instrumented 1 source file(s) with 213 mutant(s)
+[32m17:46:20 (7132) INFO ConcurrencyTokenProvider[39m Creating 2 test runner process(es).
+[32m17:46:21 (7132) INFO BroadcastReporter[39m Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[32m17:46:21 (7132) INFO DryRunExecutor[39m Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+[32m17:46:22 (7132) INFO DryRunExecutor[39m Initial test run succeeded. Ran 50 tests in 0 seconds (net 29 ms, overhead 894 ms).
+Mutation testing 68% (elapsed: <1m, remaining: <1m) 119/213 tested (16 survived, 3 timed out)
+
+All tests/operacoes.test.js
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 1. deve somar dois números positivos [line 15] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 2. deve subtrair dois números positivos [line 16] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 3. deve multiplicar dois números positivos [line 17] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 4. deve dividir e lançar erro para divisão por zero [line 18] (killed 5)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 5. deve calcular a potência com expoente positivo [line 22] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito [line 23] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 7. deve retornar o resto da divisão [line 24] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1 [line 25] (killed 11)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 9. deve calcular a média de um array com múltiplos elementos [line 26] (killed 7)
+  ~ Suíte de Testes Fraca para 50 Operações Aritméticas 10. deve somar um array com múltiplos elementos [line 27] (covered 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 11. deve encontrar o valor máximo em um array [line 30] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 12. deve encontrar o valor mínimo em um array [line 31] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 13. deve retornar o valor absoluto de um número negativo [line 32] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 14. deve arredondar um número para cima [line 33] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 15. deve retornar true para um número par [line 34] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar [line 35] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 17. deve calcular uma porcentagem simples [line 36] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 18. deve aumentar um valor em uma porcentagem [line 37] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 19. deve diminuir um valor em uma porcentagem [line 38] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 20. deve inverter o sinal de um número positivo [line 39] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 21. deve calcular o seno de 0 [line 42] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 22. deve calcular o cosseno de 0 [line 43] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 23. deve calcular a tangente de 0 [line 44] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 24. deve calcular o logaritmo natural de Euler [line 45] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 25. deve calcular o logaritmo na base 10 [line 46] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 26. deve arredondar para baixo [line 47] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 27. deve arredondar para cima [line 48] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 28. deve calcular a hipotenusa de um triângulo retângulo [line 49] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 29. deve converter graus para radianos [line 50] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 30. deve converter radianos para graus [line 51] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 31. deve calcular o MDC de dois números [line 54] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 32. deve calcular o MMC de dois números [line 55] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo [line 56] (killed 8)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 34. deve calcular o 10º termo de Fibonacci [line 57] (killed 8)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array [line 58] (killed 5)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp) [line 59] (killed 5)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 37. deve verificar se um número é divisível por outro [line 60] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit [line 61] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius [line 62] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 40. deve calcular o inverso de um número [line 63] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 41. deve calcular a área de um círculo [line 66] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 42. deve calcular a área de um retângulo [line 67] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 43. deve calcular o perímetro de um retângulo [line 68] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro [line 69] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro [line 70] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 46. deve verificar se dois números são iguais [line 71] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado [line 72] (killed 7)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 48. deve calcular o dobro de um número [line 73] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 49. deve calcular o triplo de um número [line 74] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 50. deve calcular a metade de um número [line 75] (killed 2)
+
+[NoCoverage] StringLiteral
+src/operacoes.js:13:30
+-     if (n < 0) throw new Error('Não é possível calcular a raiz quadrada de um número negativo.');
++     if (n < 0) throw new Error("");
+
+[NoCoverage] StringLiteral
+src/operacoes.js:18:30
+-     if (n < 0) throw new Error('Fatorial não é definido para números negativos.');
++     if (n < 0) throw new Error("");
+
+[NoCoverage] StringLiteral
+src/operacoes.js:34:45
+-     if (numeros.length === 0) throw new Error('Array vazio не possui valor máximo.');
++     if (numeros.length === 0) throw new Error("");
+
+[NoCoverage] StringLiteral
+src/operacoes.js:38:45
+-     if (numeros.length === 0) throw new Error('Array vazio не possui valor mínimo.');
++     if (numeros.length === 0) throw new Error("");
+
+[NoCoverage] BooleanLiteral
+src/operacoes.js:73:22
+-     if (n <= 1) return false;
++     if (n <= 1) return true;
+
+[NoCoverage] BooleanLiteral
+src/operacoes.js:75:29
+-       if (n % i === 0) return false;
++       if (n % i === 0) return true;
+
+[NoCoverage] StringLiteral
+src/operacoes.js:96:32
+-     if (n === 0) throw new Error('Não é possível inverter o número zero.');
++     if (n === 0) throw new Error("");
+
+[NoCoverage] StringLiteral
+src/operacoes.js:108:45
+-     if (numeros.length === 0) throw new Error('Array vazio не possui mediana.');
++     if (numeros.length === 0) throw new Error("");
+
+[NoCoverage] BlockStatement
+src/operacoes.js:111:32
+-     if (sorted.length % 2 === 0) {
+-       return (sorted[mid - 1] + sorted[mid]) / 2;
+-     }
++     if (sorted.length % 2 === 0) {}
+
+[NoCoverage] ArithmeticOperator
+src/operacoes.js:112:12
+-       return (sorted[mid - 1] + sorted[mid]) / 2;
++       return (sorted[mid - 1] + sorted[mid]) * 2;
+
+[NoCoverage] ArithmeticOperator
+src/operacoes.js:112:13
+-       return (sorted[mid - 1] + sorted[mid]) / 2;
++       return (sorted[mid - 1] - sorted[mid]) / 2;
+
+[NoCoverage] ArithmeticOperator
+src/operacoes.js:112:20
+-       return (sorted[mid - 1] + sorted[mid]) / 2;
++       return (sorted[mid + 1] + sorted[mid]) / 2;
+
+[Survived] StringLiteral
+src/operacoes.js:8:32
+-     if (b === 0) throw new Error('Divisão por zero não é permitida.');
++     if (b === 0) throw new Error("");
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 4. deve dividir e lançar erro para divisão por zero
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:13:7
+-     if (n < 0) throw new Error('Não é possível calcular a raiz quadrada de um número negativo.');
++     if (false) throw new Error('Não é possível calcular a raiz quadrada de um número negativo.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito
+
+
+[Survived] EqualityOperator
+src/operacoes.js:13:7
+-     if (n < 0) throw new Error('Não é possível calcular a raiz quadrada de um número negativo.');
++     if (n <= 0) throw new Error('Não é possível calcular a raiz quadrada de um número negativo.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:18:7
+-     if (n < 0) throw new Error('Fatorial não é definido para números negativos.');
++     if (false) throw new Error('Fatorial não é definido para números negativos.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] EqualityOperator
+src/operacoes.js:18:7
+-     if (n < 0) throw new Error('Fatorial não é definido para números negativos.');
++     if (n <= 0) throw new Error('Fatorial não é definido para números negativos.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] LogicalOperator
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (n === 0 && n === 1) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (false || n === 1) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:18
+-     if (n === 0 || n === 1) return 1;
++     if (n === 0 || false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:25:7
+-     if (numeros.length === 0) return 0;
++     if (false) return 0;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 9. deve calcular a média de um array com múltiplos elementos
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:34:7
+-     if (numeros.length === 0) throw new Error('Array vazio не possui valor máximo.');
++     if (false) throw new Error('Array vazio не possui valor máximo.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 11. deve encontrar o valor máximo em um array
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:38:7
+-     if (numeros.length === 0) throw new Error('Array vazio не possui valor mínimo.');
++     if (false) throw new Error('Array vazio не possui valor mínimo.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 12. deve encontrar o valor mínimo em um array
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:43:28
+-   function isPar(n) { return n % 2 === 0; }
++   function isPar(n) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 15. deve retornar true para um número par
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:44:30
+-   function isImpar(n) { return n % 2 !== 0; }
++   function isImpar(n) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:44:30
+-   function isImpar(n) { return n % 2 !== 0; }
++   function isImpar(n) { return n * 2 !== 0; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:73:7
+-     if (n <= 1) return false;
++     if (false) return false;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] EqualityOperator
+src/operacoes.js:73:7
+-     if (n <= 1) return false;
++     if (n < 1) return false;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:74:19
+-     for (let i = 2; i < n; i++) {
++     for (let i = 2; false; i++) {
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] EqualityOperator
+src/operacoes.js:74:19
+-     for (let i = 2; i < n; i++) {
++     for (let i = 2; i >= n; i++) {
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] BlockStatement
+src/operacoes.js:74:31
+-     for (let i = 2; i < n; i++) {
+-       if (n % i === 0) return false;
+-     }
++     for (let i = 2; i < n; i++) {}
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:75:9
+-       if (n % i === 0) return false;
++       if (false) return false;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:75:9
+-       if (n % i === 0) return false;
++       if (n * i === 0) return false;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:84:7
+-     if (numeros.length === 0) return 1;
++     if (false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:88:7
+-     if (valor < min) return min;
++     if (false) return min;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+
+
+[Survived] EqualityOperator
+src/operacoes.js:88:7
+-     if (valor < min) return min;
++     if (valor <= min) return min;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:89:7
+-     if (valor > max) return max;
++     if (false) return max;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+
+
+[Survived] EqualityOperator
+src/operacoes.js:89:7
+-     if (valor > max) return max;
++     if (valor >= max) return max;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:92:51
+-   function isDivisivel(dividendo, divisor) { return dividendo % divisor === 0; }
++   function isDivisivel(dividendo, divisor) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 37. deve verificar se um número é divisível por outro
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:93:51
+-   function celsiusParaFahrenheit(celsius) { return (celsius * 9/5) + 32; }
++   function celsiusParaFahrenheit(celsius) { return (celsius * 9 * 5) + 32; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:93:51
+-   function celsiusParaFahrenheit(celsius) { return (celsius * 9/5) + 32; }
++   function celsiusParaFahrenheit(celsius) { return (celsius / 9/5) + 32; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:94:53
+-   function fahrenheitParaCelsius(fahrenheit) { return (fahrenheit - 32) * 5/9; }
++   function fahrenheitParaCelsius(fahrenheit) { return (fahrenheit - 32) * 5 * 9; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:94:53
+-   function fahrenheitParaCelsius(fahrenheit) { return (fahrenheit - 32) * 5/9; }
++   function fahrenheitParaCelsius(fahrenheit) { return (fahrenheit - 32) / 5/9; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:96:7
+-     if (n === 0) throw new Error('Não é possível inverter o número zero.');
++     if (false) throw new Error('Não é possível inverter o número zero.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 40. deve calcular o inverso de um número
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:104:36
+-   function isMaiorQue(a, b) { return a > b; }
++   function isMaiorQue(a, b) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro
+
+
+[Survived] EqualityOperator
+src/operacoes.js:104:36
+-   function isMaiorQue(a, b) { return a > b; }
++   function isMaiorQue(a, b) { return a >= b; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:105:36
+-   function isMenorQue(a, b) { return a < b; }
++   function isMenorQue(a, b) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro
+
+
+[Survived] EqualityOperator
+src/operacoes.js:105:36
+-   function isMenorQue(a, b) { return a < b; }
++   function isMenorQue(a, b) { return a <= b; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:106:33
+-   function isEqual(a, b) { return a === b; }
++   function isEqual(a, b) { return true; }
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 46. deve verificar se dois números são iguais
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:108:7
+-     if (numeros.length === 0) throw new Error('Array vazio не possui mediana.');
++     if (false) throw new Error('Array vazio не possui mediana.');
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+[Survived] MethodExpression
+src/operacoes.js:109:18
+-     const sorted = [...numeros].sort((a, b) => a - b);
++     const sorted = [...numeros];
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+[Survived] ArrowFunction
+src/operacoes.js:109:36
+-     const sorted = [...numeros].sort((a, b) => a - b);
++     const sorted = [...numeros].sort(() => undefined);
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:109:46
+-     const sorted = [...numeros].sort((a, b) => a - b);
++     const sorted = [...numeros].sort((a, b) => a + b);
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:111:7
+-     if (sorted.length % 2 === 0) {
++     if (false) {
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+[Survived] ArithmeticOperator
+src/operacoes.js:111:7
+-     if (sorted.length % 2 === 0) {
++     if (sorted.length * 2 === 0) {
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado
+
+
+Ran 1.19 tests per mutant on average.
+--------------|------------------|----------|-----------|------------|----------|----------|
+              | % Mutation score |          |           |            |          |          |
+File          |  total | covered | # killed | # timeout | # survived | # no cov | # errors |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+All files     |  73.71 |   78.11 |      154 |         3 |         44 |       12 |        0 |
+ operacoes.js |  73.71 |   78.11 |      154 |         3 |         44 |       12 |        0 |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+[32m17:46:41 (7132) INFO JsonReporter[39m Your report can be found at: file:///C:/Users/Islayder/Downloads/atividade_testes/reports/reproduced/initial/mutation/mutation.json
+[32m17:46:41 (7132) INFO HtmlReporter[39m Your report can be found at: file:///C:/Users/Islayder/Downloads/atividade_testes/reports/reproduced/initial/mutation/mutation.html
+[32m17:46:41 (7132) INFO MutationTestExecutor[39m Done in 21 seconds.

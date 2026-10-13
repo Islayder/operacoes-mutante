@@ -1,0 +1,9 @@
+PASS test/operacoes.adicionais.test.js
+PASS test/operacoes.test.js
+
+Test Suites: 2 passed, 2 total
+Tests:       149 passed, 149 total
+Snapshots:   0 total
+Time:        0.862 s, estimated 1 s
+Ran all test suites.
+Test results written to: reports\reproduced\final\jest.json

@@ -1,0 +1,59 @@
+PASS test/operacoes.test.js
+  Suíte de Testes Fraca para 50 Operações Aritméticas
+    √ 1. deve somar dois números positivos (3 ms)
+    √ 2. deve subtrair dois números positivos
+    √ 3. deve multiplicar dois números positivos
+    √ 4. deve dividir e lançar erro para divisão por zero (15 ms)
+    √ 5. deve calcular a potência com expoente positivo (1 ms)
+    √ 6. deve calcular a raiz quadrada de um quadrado perfeito
+    √ 7. deve retornar o resto da divisão (1 ms)
+    √ 8. deve calcular o fatorial de um número maior que 1
+    √ 9. deve calcular a média de um array com múltiplos elementos
+    √ 10. deve somar um array com múltiplos elementos
+    √ 11. deve encontrar o valor máximo em um array
+    √ 12. deve encontrar o valor mínimo em um array (1 ms)
+    √ 13. deve retornar o valor absoluto de um número negativo
+    √ 14. deve arredondar um número para cima
+    √ 15. deve retornar true para um número par
+    √ 16. deve retornar true para um número ímpar
+    √ 17. deve calcular uma porcentagem simples
+    √ 18. deve aumentar um valor em uma porcentagem
+    √ 19. deve diminuir um valor em uma porcentagem
+    √ 20. deve inverter o sinal de um número positivo (1 ms)
+    √ 21. deve calcular o seno de 0
+    √ 22. deve calcular o cosseno de 0
+    √ 23. deve calcular a tangente de 0
+    √ 24. deve calcular o logaritmo natural de Euler (1 ms)
+    √ 25. deve calcular o logaritmo na base 10
+    √ 26. deve arredondar para baixo
+    √ 27. deve arredondar para cima
+    √ 28. deve calcular a hipotenusa de um triângulo retângulo
+    √ 29. deve converter graus para radianos
+    √ 30. deve converter radianos para graus
+    √ 31. deve calcular o MDC de dois números
+    √ 32. deve calcular o MMC de dois números
+    √ 33. deve verificar que um número é primo (1 ms)
+    √ 34. deve calcular o 10º termo de Fibonacci
+    √ 35. deve calcular o produto de um array
+    √ 36. deve manter um valor dentro de um intervalo (clamp) (1 ms)
+    √ 37. deve verificar se um número é divisível por outro
+    √ 38. deve converter Celsius para Fahrenheit
+    √ 39. deve converter Fahrenheit para Celsius
+    √ 40. deve calcular o inverso de um número
+    √ 41. deve calcular a área de um círculo
+    √ 42. deve calcular a área de um retângulo
+    √ 43. deve calcular o perímetro de um retângulo (1 ms)
+    √ 44. deve verificar se um número é maior que outro
+    √ 45. deve verificar se um número é menor que outro
+    √ 46. deve verificar se dois números são iguais (1 ms)
+    √ 47. deve calcular a mediana de um array ímpar e ordenado
+    √ 48. deve calcular o dobro de um número
+    √ 49. deve calcular o triplo de um número
+    √ 50. deve calcular a metade de um número
+
+Test Suites: 1 passed, 1 total
+Tests:       50 passed, 50 total
+Snapshots:   0 total
+Time:        0.761 s, estimated 1 s
+Ran all test suites.
+Test results written to: reports\reproduced\initial\jest.json

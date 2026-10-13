@@ -1,3 +1,6 @@
 node_modules/
 coverage/
-package-lock.json
+.tools/
+.stryker-tmp/
+reports/
+__pycache__/

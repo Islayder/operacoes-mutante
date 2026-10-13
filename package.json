@@ -6,10 +6,16 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "mutate": "stryker run",
+    "validate:initial": "node scripts/validate.cjs initial",
+    "validate:final": "node scripts/validate.cjs final",
+    "audit:evidence": "node scripts/audit-evidence.cjs"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.2",
+    "@stryker-mutator/core": "10.0.0",
+    "@stryker-mutator/jest-runner": "10.0.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   },

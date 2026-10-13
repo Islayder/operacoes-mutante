@@ -1,0 +1,126 @@
+{
+  "original": "c10621a4fe20f8332e783e06cad0e1b98449aad2",
+  "sourceUnchanged": true,
+  "sourceSha256LF": "169b5061f5fb2b795009a3968912931bbb880e97e509883231c0dcc3c36d5810",
+  "initial": {
+    "tests": 50,
+    "passed": 50,
+    "failed": 0,
+    "states": {
+      "NoCoverage": 12,
+      "Killed": 154,
+      "Survived": 44,
+      "Timeout": 3
+    },
+    "total": 213,
+    "score": 73.70892018779342,
+    "coverage": {
+      "lines": {
+        "total": 74,
+        "covered": 73,
+        "skipped": 0,
+        "pct": 98.64
+      },
+      "statements": {
+        "total": 96,
+        "covered": 82,
+        "skipped": 0,
+        "pct": 85.41
+      },
+      "functions": {
+        "total": 53,
+        "covered": 53,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 34,
+        "covered": 20,
+        "skipped": 0,
+        "pct": 58.82
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "final": {
+    "tests": 149,
+    "passed": 149,
+    "failed": 0,
+    "states": {
+      "Killed": 202,
+      "Survived": 5,
+      "Timeout": 6
+    },
+    "total": 213,
+    "score": 97.65258215962442,
+    "coverage": {
+      "lines": {
+        "total": 74,
+        "covered": 74,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 96,
+        "covered": 96,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 53,
+        "covered": 53,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 34,
+        "covered": 34,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "critical": [
+    {
+      "id": "11",
+      "initial": "Survived",
+      "final": "Killed"
+    },
+    {
+      "id": "183",
+      "initial": "Survived",
+      "final": "Killed"
+    },
+    {
+      "id": "200",
+      "initial": "Survived",
+      "final": "Killed"
+    }
+  ],
+  "targetAbove98Met": false,
+  "equivalentSurvivors": [
+    "31",
+    "32",
+    "33",
+    "35",
+    "140"
+  ],
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "win32",
+    "arch": "x64",
+    "jest": "29.7.0",
+    "stryker": "10.0.0"
+  }
+}

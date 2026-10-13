@@ -1,0 +1,229 @@
+[33m17:44:55 (7808) WARN OptionsValidator[39m DEPRECATED. Use of "files" is deprecated, please use "ignorePatterns" instead (or remove "files" altogether will probably work as well). For now, rewriting them as ["**","!src/**/*.js","!test/**/*.js","!package.json","!package-lock.json","!stryker.config.json"]. See https://stryker-mutator.io/docs/stryker-js/configuration/#ignorepatterns-string
+[32m17:44:55 (7808) INFO ProjectReader[39m Found 1 of 6 file(s) to be mutated.
+[32m17:44:55 (7808) INFO Instrumenter[39m Instrumented 1 source file(s) with 213 mutant(s)
+[32m17:44:55 (7808) INFO ConcurrencyTokenProvider[39m Creating 2 test runner process(es).
+[32m17:44:56 (7808) INFO BroadcastReporter[39m Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[32m17:44:57 (7808) INFO DryRunExecutor[39m Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+[32m17:44:58 (7808) INFO DryRunExecutor[39m Initial test run succeeded. Ran 149 tests in 1 second (net 80 ms, overhead 1046 ms).
+Mutation testing 55% (elapsed: <1m, remaining: <1m) 77/213 tested (4 survived, 1 timed out)
+Mutation testing 72% (elapsed: <1m, remaining: <1m) 157/213 tested (5 survived, 6 timed out)
+
+All tests
+  operacoes.adicionais.test.js
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente divisao rejeita [5,0] com erro específico [line 12] (killed 2)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente raizQuadrada rejeita [-1] com erro específico [line 12] (killed 3)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente fatorial rejeita [-1] com erro específico [line 12] (killed 4)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente maximoArray rejeita [[]] com erro específico [line 12] (killed 4)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente minimoArray rejeita [[]] com erro específico [line 12] (killed 4)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente inverso rejeita [0] com erro específico [line 12] (killed 4)
+    ✓ Erros: tipo e mensagem fazem parte do contrato existente medianaArray rejeita [[]] com erro específico [line 12] (killed 3)
+    ~ Casos de fronteira e resultados exatos soma([-3,3]) = 0 [line 100] (covered 2)
+    ~ Casos de fronteira e resultados exatos subtracao([-3,2]) = -5 [line 100] (covered 2)
+    ~ Casos de fronteira e resultados exatos multiplicacao([-3,4]) = -12 [line 100] (covered 2)
+    ~ Casos de fronteira e resultados exatos divisao([-9,3]) = -3 [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos potencia([2,0]) = 1 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos potencia([2,-2]) = 0.25 [line 100] (covered 1)
+    ✓ Casos de fronteira e resultados exatos raizQuadrada([0]) = 0 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos restoDivisao([-10,3]) = -1 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos fatorial([0]) = 1 [line 100] (killed 2)
+    ~ Casos de fronteira e resultados exatos fatorial([1]) = 1 [line 100] (covered 12)
+    ✓ Casos de fronteira e resultados exatos fatorial([2]) = 2 [line 100] (killed 8)
+    ~ Casos de fronteira e resultados exatos fatorial([5]) = 120 [line 100] (covered 18)
+    ✓ Casos de fronteira e resultados exatos mediaArray([[]]) = 0 [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos mediaArray([[-4,0,7]]) = 1 [line 100] (killed 5)
+    ~ Casos de fronteira e resultados exatos somaArray([[]]) = 0 [line 100] (covered 2)
+    ~ Casos de fronteira e resultados exatos somaArray([[-3,0,2]]) = -1 [line 100] (covered 3)
+    ✓ Casos de fronteira e resultados exatos maximoArray([[-9,-2,-4]]) = -2 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos minimoArray([[-9,-2,-4]]) = -9 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos valorAbsoluto([0]) = 0 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos valorAbsoluto([3]) = 3 [line 100] (covered 1)
+    ✓ Casos de fronteira e resultados exatos arredondar([2.5]) = 3 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos arredondar([-2.5]) = -2 [line 100] (covered 1)
+    ✓ Casos de fronteira e resultados exatos isPar([3]) = false [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos isPar([0]) = true [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos isPar([-2]) = true [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos isImpar([2]) = false [line 100] (killed 4)
+    ~ Casos de fronteira e resultados exatos isImpar([0]) = false [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos isImpar([-3]) = true [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos calcularPorcentagem([0,200]) = 0 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos inverterSinal([-42]) = 42 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos inverterSinal([0]) = -0 [line 100] (covered 2)
+    ✓ Casos de fronteira e resultados exatos arredondarParaBaixo([-2.1]) = -3 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos arredondarParaCima([-2.9]) = -2 [line 100] (covered 1)
+    ✓ Casos de fronteira e resultados exatos mdc([12,8]) = 4 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos mdc([7,0]) = 7 [line 100] (covered 2)
+    ~ Casos de fronteira e resultados exatos mdc([0,7]) = 7 [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos mmc([6,8]) = 24 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos isPrimo([-2]) = false [line 100] (killed 4)
+    ~ Casos de fronteira e resultados exatos isPrimo([0]) = false [line 100] (covered 6)
+    ✓ Casos de fronteira e resultados exatos isPrimo([1]) = false [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos isPrimo([2]) = true [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos isPrimo([4]) = false [line 100] (killed 5)
+    ~ Casos de fronteira e resultados exatos isPrimo([9]) = false [line 100] (covered 15)
+    ✓ Casos de fronteira e resultados exatos fibonacci([0]) = 0 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos fibonacci([1]) = 1 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos fibonacci([2]) = 1 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos fibonacci([6]) = 8 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos produtoArray([[]]) = 1 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos produtoArray([[-2,3]]) = -6 [line 100] (killed 4)
+    ~ Casos de fronteira e resultados exatos produtoArray([[2,0,3]]) = 0 [line 100] (covered 6)
+    ✓ Casos de fronteira e resultados exatos clamp([-1,0,10]) = 0 [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos clamp([11,0,10]) = 10 [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos clamp([0,0,10]) = 0 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos clamp([10,0,10]) = 10 [line 100] (covered 9)
+    ✓ Casos de fronteira e resultados exatos clamp([0,0,10]) = -0 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos clamp([0,-10,0]) = 0 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos isDivisivel([10,3]) = false [line 100] (killed 3)
+    ✓ Casos de fronteira e resultados exatos isDivisivel([-10,2]) = true [line 100] (killed 2)
+    ~ Casos de fronteira e resultados exatos isDivisivel([10,0]) = false [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos celsiusParaFahrenheit([100]) = 212 [line 100] (killed 4)
+    ~ Casos de fronteira e resultados exatos celsiusParaFahrenheit([-40]) = -40 [line 100] (covered 4)
+    ✓ Casos de fronteira e resultados exatos fahrenheitParaCelsius([212]) = 100 [line 100] (killed 4)
+    ~ Casos de fronteira e resultados exatos fahrenheitParaCelsius([-40]) = -40 [line 100] (covered 4)
+    ✓ Casos de fronteira e resultados exatos inverso([-4]) = -0.25 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos areaRetangulo([0,4]) = 0 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos perimetroRetangulo([0,4]) = 8 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos isMaiorQue([5,5]) = false [line 100] (killed 2)
+    ~ Casos de fronteira e resultados exatos isMaiorQue([3,5]) = false [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos isMenorQue([5,5]) = false [line 100] (killed 3)
+    ~ Casos de fronteira e resultados exatos isMenorQue([5,3]) = false [line 100] (covered 5)
+    ✓ Casos de fronteira e resultados exatos isEqual([7,8]) = false [line 100] (killed 3)
+    ~ Casos de fronteira e resultados exatos isEqual([7,"7"]) = false [line 100] (covered 4)
+    ✓ Casos de fronteira e resultados exatos medianaArray([[30,1,20,2]]) = 11 [line 100] (killed 13)
+    ✓ Casos de fronteira e resultados exatos medianaArray([[20,3,1]]) = 3 [line 100] (killed 1)
+    ~ Casos de fronteira e resultados exatos medianaArray([[7]]) = 7 [line 100] (covered 12)
+    ~ Casos de fronteira e resultados exatos medianaArray([[-5,10]]) = 2.5 [line 100] (covered 17)
+    ✓ Casos de fronteira e resultados exatos dobro([-3]) = -6 [line 100] (killed 2)
+    ✓ Casos de fronteira e resultados exatos triplo([0]) = 0 [line 100] (killed 1)
+    ✓ Casos de fronteira e resultados exatos metade([3]) = 1.5 [line 100] (killed 1)
+    ~ Resultados numéricos aproximados raizQuadrada([2]) aproxima 1.4142135623730951 [line 119] (covered 5)
+    ✓ Resultados numéricos aproximados aumentarPorcentagem([80,25]) aproxima 100 [line 119] (killed 2)
+    ✓ Resultados numéricos aproximados diminuirPorcentagem([80,25]) aproxima 60 [line 119] (killed 2)
+    ~ Resultados numéricos aproximados seno([1.5707963267948966]) aproxima 1 [line 119] (covered 1)
+    ✓ Resultados numéricos aproximados cosseno([3.141592653589793]) aproxima -1 [line 119] (killed 1)
+    ~ Resultados numéricos aproximados tangente([0.7853981633974483]) aproxima 1 [line 119] (covered 1)
+    ✓ Resultados numéricos aproximados logaritmoNatural([1]) aproxima 0 [line 119] (killed 1)
+    ~ Resultados numéricos aproximados logaritmoBase10([1000]) aproxima 3 [line 119] (covered 1)
+    ✓ Resultados numéricos aproximados hipotenusa([5,12]) aproxima 13 [line 119] (killed 1)
+    ✓ Resultados numéricos aproximados grausParaRadianos([90]) aproxima 1.5707963267948966 [line 119] (killed 2)
+    ✓ Resultados numéricos aproximados radianosParaGraus([1.5707963267948966]) aproxima 90 [line 119] (killed 1)
+    ✓ Resultados numéricos aproximados areaCirculo([1]) aproxima 3.141592653589793 [line 119] (killed 1)
+    ~ Resultados numéricos aproximados mediana ordena uma cópia sem modificar a entrada [line 122] (covered 17)
+  operacoes.test.js
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 1. deve somar dois números positivos [line 15] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 2. deve subtrair dois números positivos [line 16] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 3. deve multiplicar dois números positivos [line 17] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 4. deve dividir e lançar erro para divisão por zero [line 18] (killed 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 5. deve calcular a potência com expoente positivo [line 22] (covered 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito [line 23] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 7. deve retornar o resto da divisão [line 24] (covered 2)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1 [line 25] (covered 18)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 9. deve calcular a média de um array com múltiplos elementos [line 26] (covered 8)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 10. deve somar um array com múltiplos elementos [line 27] (covered 3)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 11. deve encontrar o valor máximo em um array [line 30] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 12. deve encontrar o valor mínimo em um array [line 31] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 13. deve retornar o valor absoluto de um número negativo [line 32] (covered 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 14. deve arredondar um número para cima [line 33] (covered 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 15. deve retornar true para um número par [line 34] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar [line 35] (covered 5)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 17. deve calcular uma porcentagem simples [line 36] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 18. deve aumentar um valor em uma porcentagem [line 37] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 19. deve diminuir um valor em uma porcentagem [line 38] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 20. deve inverter o sinal de um número positivo [line 39] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 21. deve calcular o seno de 0 [line 42] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 22. deve calcular o cosseno de 0 [line 43] (covered 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 23. deve calcular a tangente de 0 [line 44] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 24. deve calcular o logaritmo natural de Euler [line 45] (covered 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 25. deve calcular o logaritmo na base 10 [line 46] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 26. deve arredondar para baixo [line 47] (covered 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 27. deve arredondar para cima [line 48] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 28. deve calcular a hipotenusa de um triângulo retângulo [line 49] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 29. deve converter graus para radianos [line 50] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 30. deve converter radianos para graus [line 51] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 31. deve calcular o MDC de dois números [line 54] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 32. deve calcular o MMC de dois números [line 55] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo [line 56] (killed 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 34. deve calcular o 10º termo de Fibonacci [line 57] (covered 8)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array [line 58] (covered 6)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp) [line 59] (covered 9)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 37. deve verificar se um número é divisível por outro [line 60] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit [line 61] (covered 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius [line 62] (covered 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 40. deve calcular o inverso de um número [line 63] (covered 5)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 41. deve calcular a área de um círculo [line 66] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 42. deve calcular a área de um retângulo [line 67] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 43. deve calcular o perímetro de um retângulo [line 68] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro [line 69] (killed 3)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro [line 70] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 46. deve verificar se dois números são iguais [line 71] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado [line 72] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 48. deve calcular o dobro de um número [line 73] (covered 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 49. deve calcular o triplo de um número [line 74] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 50. deve calcular a metade de um número [line 75] (killed 1)
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+    Casos de fronteira e resultados exatos fatorial([0]) = 1
+    Casos de fronteira e resultados exatos fatorial([1]) = 1
+  and 2 more tests!
+
+
+[Survived] LogicalOperator
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (n === 0 && n === 1) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+    Casos de fronteira e resultados exatos fatorial([0]) = 1
+    Casos de fronteira e resultados exatos fatorial([1]) = 1
+  and 2 more tests!
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:7
+-     if (n === 0 || n === 1) return 1;
++     if (false || n === 1) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+    Casos de fronteira e resultados exatos fatorial([0]) = 1
+    Casos de fronteira e resultados exatos fatorial([1]) = 1
+  and 2 more tests!
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:19:18
+-     if (n === 0 || n === 1) return 1;
++     if (n === 0 || false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1
+    Casos de fronteira e resultados exatos fatorial([1]) = 1
+    Casos de fronteira e resultados exatos fatorial([2]) = 2
+  and 1 more test!
+
+
+[Survived] ConditionalExpression
+src/operacoes.js:84:7
+-     if (numeros.length === 0) return 1;
++     if (false) return 1;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array
+    Casos de fronteira e resultados exatos produtoArray([[]]) = 1
+    Casos de fronteira e resultados exatos produtoArray([[-2,3]]) = -6
+  and 1 more test!
+
+
+Ran 4.06 tests per mutant on average.
+--------------|------------------|----------|-----------|------------|----------|----------|
+              | % Mutation score |          |           |            |          |          |
+File          |  total | covered | # killed | # timeout | # survived | # no cov | # errors |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+All files     |  97.65 |   97.65 |      202 |         6 |          5 |        0 |        0 |
+ operacoes.js |  97.65 |   97.65 |      202 |         6 |          5 |        0 |        0 |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+[32m17:45:24 (7808) INFO JsonReporter[39m Your report can be found at: file:///C:/Users/Islayder/Downloads/atividade_testes/reports/reproduced/final/mutation/mutation.json
+[32m17:45:24 (7808) INFO HtmlReporter[39m Your report can be found at: file:///C:/Users/Islayder/Downloads/atividade_testes/reports/reproduced/final/mutation/mutation.html
+[32m17:45:24 (7808) INFO MutationTestExecutor[39m Done in 29 seconds.
